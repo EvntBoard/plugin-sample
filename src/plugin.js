@@ -15,15 +15,15 @@ class MyCustomPlugin {
       prop1: this.prop1,
       prop2: this.prop2,
     })
-    this.evntBus?.newEvent({ event: 'sample-plugin-load' })
+    this.evntBus?.newEvent('sample-plugin-load')
   }
 
   async unload() {
-    this.evntBus?.newEvent({ event: 'sample-plugin-unload' })
+    this.evntBus?.newEvent('sample-plugin-unload')
   }
 
   async sampleMethod(aSampledata) {
-    this.evntBus?.newEvent({ event: 'sample-plugin-new-data', aSampledata })
+    this.evntBus?.newEvent('sample-plugin-new-data', aSampledata)
   }
 
   async reload() {
