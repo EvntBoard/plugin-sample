@@ -1,9 +1,9 @@
 import {emitNewEvent} from "./utils";
 
 export class SamplePlugin {
-  private readonly answer: string;
+  private readonly answer: number;
 
-  constructor(answer: string) {
+  constructor(answer: number) {
     this.answer = answer
   }
 
